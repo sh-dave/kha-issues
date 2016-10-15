@@ -5,8 +5,8 @@ class Main {
 
 	static function setup() {
 		bb = kha.Image.createRenderTarget(1024, 768, kha.graphics4.TextureFormat.RGBA32, kha.graphics4.DepthStencilFormat.DepthAutoStencilAuto);
-		kha.System.notifyOnRender(renderFB);
-		// kha.System.notifyOnRender(renderBB);	
+		// kha.System.notifyOnRender(renderFB);
+		kha.System.notifyOnRender(renderBB);	
 	}
 
 	static function renderBB( framebuffer : kha.Framebuffer ) {
